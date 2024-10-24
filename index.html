@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange Rate Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Exchange Rate Checker</h1>
+        <div class="input-section">
+            <label for="baseCurrency">Base Currency:</label>
+            <input type="text" id="baseCurrency" placeholder="e.g., USD">
+
+            <label for="targetCurrency">Target Currency:</label>
+            <select id="targetCurrency">
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+                <option value="INR">INR</option>
+                <option value="CAD">CAD</option>
+            </select>
+
+            <button id="getRate">Get Exchange Rate</button>
+        </div>
+        <div class="result-section">
+            <h2>Exchange Rate</h2>
+            <p id="rateDisplay">-</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
